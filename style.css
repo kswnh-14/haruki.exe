@@ -4,10 +4,17 @@
    }
    @media screen and (max-width: 1000px) {
    .page { width: 98%; }
+   html{
+         font-size: 100%;
+      }
    img { width: 100%; }
    }
+
    @media screen and (max-width: 900px) {
    img { width: 100%; }
+   html{
+         font-size: 90%;
+      }
    }
 /* 両端部分に付ける背景色 */
    html{
@@ -136,7 +143,6 @@
    }
 
    .button {
-     text-align: center;
      width: 250px;
      height: 60px;
      font-family: 'Roboto', sans-serif;
