@@ -1,6 +1,136 @@
 <html>
 <style>
-        .box-shadow {
+      textarea {
+        cursor: pointer;
+      }
+      .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 70px;
+        grid-template-rows: 115px;
+      }
+      .panel-grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .dialogs-grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      li {
+        text-align: center;
+        list-style: none;
+      }
+      .background-color {
+        background: #FFFFFF;
+      }
+      .open-btn {
+        background: #B82E73;
+        margin: 13px 0;
+      }
+      .demo-btn {
+        background: #c3c3c3;
+        margin: 13px 0;
+      }
+      .closed-btn {
+        background: #B82E73;
+      }
+      .tutorial-btn {
+        background: #c3c3c3;
+      }
+      .v-btn {
+        border-radius: 12px;
+      }
+      .right {
+        float: right;
+      }
+      /* サイドバー内のセレクトボックス */
+      .v-text-field.v-text-field--enclosed {
+        margin-right: 10px;
+      }
+      .expansion-panels {
+        margin-bottom: 12px;
+      }
+      .nested-expansion-panel {
+        background-color: #fbfbfb;
+      }
+      .change-seats-button {
+        margin-top: 10px;
+      }
+      .on-seats {
+        background: mediumaquamarine;
+      }
+      .male-seats {
+        background: #cce5ff;
+      }
+      .female-seats {
+        background: #ffdbff;
+      }
+      .off-seats {
+        background: #ffffff;
+      }
+      .seat{
+        height: 80px;/*60px;*/
+        width: 80px;/*15%;*/
+        display: inline-block;
+        border: 3px solid #0BB3BF;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 7px;
+      }
+      .margin-right {
+        margin-right: 10px;
+      }
+      .minus-margin-right {
+        margin-right: -4px;
+      }
+      .margin-bottom {
+        padding-bottom: 10px;
+      }
+      .card-bottom {
+        padding-bottom: 35px;
+      }
+      .left-card-margin-large {
+        margin: 0 20px 0 40px;
+      }
+      .left-card-margin-small {
+        margin: 0 3px 0 6px;
+      }
+      .right-card-margin-large {
+        margin: 0 40px 0 20px;
+      }
+      .right-card-margin-small {
+        margin: 0 6px 0 3px;
+      }
+      .minus-margin-bottom {
+        vertical-align: bottom;
+        margin-bottom: -7px;
+      }
+      .center {
+        text-align: center;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .square {
+        display: inline-block;
+        margin: 0 auto;
+        height: 80px;
+        width: 80px;
+      }
+      /* vuetifyのスタイルをオーバーライド、選択されてdisabledになった文字のカラーをblackにする */
+      .theme--light.v-select .v-select__selection--disabled{
+        color: black;
+      }
+      /* vuetifyのスタイルをオーバーライド、サイドメニューの開閉速度を設定 */
+      .v-navigation-drawer {
+        transition-duration: 0.4s;
+      }
+      /* サイドバーのボーダーを設定 */
+      .v-navigation-drawer__content {
+        border: solid #747474;
+        border-width: 0 1px 0 1px;
+      }
+      .box-shadow {
         box-shadow: 0 0 3px 3px rgba(170,170,170,0.5);
       }
       [v-cloak] {
@@ -12,6 +142,49 @@
       /* v-checkboxのテキストカラー */
       .theme--light.v-label {
         color: rgba(0,0,0,0.75);
+      }
+      /* sortableJSで選択された座席 */
+      .highlighted {
+        background-color: #EEEEEE;
+      }
+      .sortable-item:hover {
+        cursor: grab;
+      }
+      .sortable-item:active .sortable-ghost, .sortable-chosen .sortable-drag {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+      }
+      .transition-item-move {
+        transition: transform 1s;
+      }
+      .transition-item-enter-active, .transition-item-leave-active {
+        transition: all 0s;
+      }
+      .v-expansion-panel-header>:not(.v-expansion-panel-header__icon) {
+        flex: none;
+      }
+      .close-icon {
+        margin: 17px 0 20px 0;
+      }
+      .open-icon {
+        margin: 25px 0 25px 0;
+      }
+      .v-text-field.v-text-field--enclosed {
+        margin: 0px 5px -20px;
+      }
+      .closed-icon {
+        margin: 10px 0;
+      }
+      .condition-title {
+        margin: 17px 0 28px;
+      }
+      .icon {
+        margin: 0 8px 0 -5px;
+      }
+      .introjs-tooltip {
+        min-width: 400px;
+        max-width: 400px;
       }
   </style>
 <head></head>
@@ -46,5 +219,5 @@
               </div>
             </template>
             <div class="card-bottom"></div>
-          </v-card></body>
+          </v-card>
 </html>
