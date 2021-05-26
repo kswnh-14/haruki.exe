@@ -13,7 +13,7 @@
    @media screen and (max-width: 900px) {
    img { width: 100%; }
    html{
-         font-size: 90%;
+         font-size: 8px;
       }
    }
 /* 両端部分に付ける背景色 */
