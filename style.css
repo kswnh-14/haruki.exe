@@ -5,16 +5,16 @@
    }
    @media screen and (max-width: 1000px) {
    #page { width: 98%; }
-   p {
+   p .step-title3 .step-body300 .step-body3 #text .step-label3::after .button #copyright {
          font-size: 100%;
       }
    img { width: 100%; }
    }
 
    @media screen and (max-width: 900px) {
-   img { width: 100%; }
-   p {
-         font-size: 8px;
+   img { width: 500%; }
+   p .step-title3 .step-body300 .step-body3 #text .step-label3::after .button #copyright {
+         font-size: 50%;
       }
    }
 /* 両端部分に付ける背景色 */
