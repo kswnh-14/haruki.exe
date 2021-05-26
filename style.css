@@ -1,5 +1,6 @@
    .page {
   width: 980px;
+  padding: 0px 20px;
   margin: 0 auto;
    }
    @media screen and (max-width: 1000px) {
@@ -23,7 +24,6 @@
 /* 空白 */
    body{
       margin: 0px 15%;
-      padding: 0px 20px;
       background-color: #ffffff;
    }
 /***ステップバー***/
