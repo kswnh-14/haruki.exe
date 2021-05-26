@@ -1,7 +1,7 @@
    #page {
   width: 980px;
-  padding: 0px 7%;
-  margin: 0 auto;
+  padding: 0px 4%;
+  margin: 0px;
    }
    @media screen and (max-width: 1270px) {
    #page { width: 80%; }
@@ -23,6 +23,7 @@
    }
 /* 空白 */
    body{
+      margin: 0px 5%;
       background-color: #ffffff;
    }
 /***ステップバー***/
