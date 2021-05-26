@@ -185,3 +185,35 @@
       font-size: 12px;
       font-color: #807171;
    }
+   .glyphicon {
+   position: relative;
+   top: 1px;
+   color: #fff;
+   display: inline-block;
+   font-family: "Glyphicons Halflings";
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   }
+   #move-page-top {
+   text-align: center;
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   box-sizing: border-box;
+   color: #333;
+   line-height: 50px;
+   text-decoration: none;
+   cursor: pointer;
+   font-size: 14px;
+   line-height: 1.42857143;
+   margin: 0;
+   padding: 0;
+   background: #3b3b3b;
+   transition: all .3s;
+   border-radius: 50%;
+   }
