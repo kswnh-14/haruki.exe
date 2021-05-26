@@ -165,6 +165,7 @@
      transform: translateY(-7px);
    }
    .saisyo {
+      width: 100%;
       background-color: #efefef;
    }
    .home {
