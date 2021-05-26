@@ -1,6 +1,6 @@
    #page {
   width: 980px;
-  padding: 0px 20px;
+  padding: 0px 10px;
   margin: 0 auto;
    }
    @media screen and (max-width: 1000px) {
@@ -171,7 +171,7 @@
       text-align: center;
       font-color: #807171;
       font-size: 20px;
-      margin: 5px;
+      padding: 5px;
    }
    .help {
       text-align: center;
