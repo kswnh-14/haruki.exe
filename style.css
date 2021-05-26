@@ -1,12 +1,12 @@
    #page {
   width: 980px;
-  padding: 0px 5%;
+  padding: 0px 7%;
   margin: 0 auto;
    }
-   @media screen and (max-width: 1000px) {
-   #page { width: 98%; }
+   @media screen and (max-width: 1270px) {
+   #page { width: 80%; }
    p .step-title3 .step-body300 .step-body3 #text .step-label3::after .button #copyright {
-         font-size: 100%;
+         font-size: 0.8rem;
       }
    img { width: 100%; }
    }
@@ -14,7 +14,7 @@
    @media screen and (max-width: 900px) {
    img { width: 50%; }
    p .step-title3 .step-body300 .step-body3 #text .step-label3::after .button #copyright {
-         font-size: 50%;
+         font-size: 0.5rem;
       }
    }
 /* 両端部分に付ける背景色 */
@@ -23,7 +23,6 @@
    }
 /* 空白 */
    body{
-      margin: 0px 15%;
       background-color: #ffffff;
    }
 /***ステップバー***/
