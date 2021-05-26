@@ -1,7 +1,8 @@
    #page {
-  width: 980px;
-  padding: 0px 4%;
-  margin: 0px;
+   text-align: center;
+   width: 75%;
+   padding: 0px 4%;
+   margin: 0px;
    }
    @media screen and (max-width: 1270px) {
    #page { width: 80%; }
