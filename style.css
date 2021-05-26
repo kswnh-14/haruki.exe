@@ -4,7 +4,7 @@
   margin: 0 auto;
    }
    @media screen and (max-width: 1000px) {
-   .page { width: 98%; }
+   #page { width: 98%; }
    p {
          font-size: 100%;
       }
@@ -13,7 +13,7 @@
 
    @media screen and (max-width: 900px) {
    img { width: 100%; }
-   p{
+   p {
          font-size: 8px;
       }
    }
