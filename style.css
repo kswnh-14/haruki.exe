@@ -171,6 +171,7 @@
       text-align: center;
       font-color: #807171;
       font-size: 20px;
+      margin: 5px;
    }
    .help {
       text-align: center;
@@ -180,8 +181,7 @@
       font-size: 14px;
    }
    #copyright {
+      margin: 5px;
       font-size: 12px;
-   }
-   .foorter {
-      padding: 0px;
+      font-color: #807171;
    }
