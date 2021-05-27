@@ -33,15 +33,34 @@ select {
   color: red;
 }
 
-#seatTable {
+.seatTable {
   margin: 100px auto;
   border: solid 2px;
   border-collapse: collapse;
-  border-color: #696969;
-  background-color: #ff8f66;
+  border-color: #f4f5f7;
+  background-color: #7fbfff;
 }
-td {
+.noneseat {
+
+}
+td  {
+  text-align: center;
   width: 90px;
   height: 60px;
   border: solid 1px;
+  border-color: #f4f5f7;
+}
+td > span {
+  font-size: 21px;
+}
+.check_mark {
+  width: 40%;
+  height: 55%;
+}
+
+.noneseat{
+  background-color: white;
+}
+.noneseat > span > .check_mark {
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
 }
