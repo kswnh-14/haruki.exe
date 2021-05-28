@@ -35,7 +35,7 @@ ul {
   padding-inline-start: 0px;
 }
 #seatArrange li {
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 15px 40px;
   display: inline;
   border: solid 2px;
@@ -52,7 +52,7 @@ input[type="checkbox"] {
   display: none;
 }
 input[type="checkbox"]:checked + label {
-  background-color: #0000ff;
+  background-color: #4169e1;
 }
 .label {
   margin: 3px 2px;
