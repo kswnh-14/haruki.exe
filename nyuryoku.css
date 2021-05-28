@@ -54,6 +54,12 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + label {
   background-color: #4169e1;
 }
+input[type="checkbox"]:checked + li {
+  background-color: #ff7f50;
+}
+input[type="checkbox"]:checked + div {
+  background-color: #2e8b57;
+}
 .label {
   margin: 3px 2px;
   width: 20px;
