@@ -1,24 +1,8 @@
+/*form*/
 .dropdownmenu {
   width: 70px;
   height: 30px;
 }
-
-select {
-  font-size: 20px;
-}
-
-#maxseats {
-  font-size: 20px;
-}
-
-#selectedseats {
-  font-size: 20px;
-  margin:auto;
-}
-#selectedseats > span {
-  color: orange;
-}
-
 #form {
   margin:10px auto;
   text-align: center;
@@ -29,38 +13,42 @@ select {
   border-color: #cce5ff;
   background-color: #fefefe;
 }
+select {
+  font-size: 20px;
+}
+#maxseats {
+  color: orange;
+}
 .mijisso {
   color: red;
 }
 
-.seatTable {
-  margin: 100px auto;
-  border: solid 3px;
-  border-collapse: collapse;
-  border-color: #f4f5f7;
-  background-color: #7fbfff;
+/*seatArrange*/
+#seatArrange {
+  margin: 15px auto;
 }
-.noneseat {
-
+ul {
+  margin: 30px auto;
+  padding: auto 40px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 }
-td  {
-  text-align: center;
-  width: 90px;
-  height: 60px;
-  border: solid 3px;
-  border-color: #f4f5f7;
+#seatArrange li {
+  background-color: #ffffff;
+  padding: 15px 40px;
+  display: inline;
+  border: solid 2px;
+  border-color: #99caff;
+  cursor: pointer;
+  cursor: hand;
 }
-td > span {
-  font-size: 21px;
+input {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 99999px;
 }
-.check_mark {
-  width: 40%;
-  height: 55%;
-}
-
-.noneseat{
-  background-color: white;
-}
-.noneseat > span > .check_mark {
-  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+input[type="checkbox"]:checked + label {
+    background-color: blue;
 }
