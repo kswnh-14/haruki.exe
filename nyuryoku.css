@@ -61,5 +61,7 @@ input[type="checkbox"]:checked + label {
   height: 10px;
   cursor:pointer;
   border:1px;
-  
+}
+div {
+ text-align: center;
 }
