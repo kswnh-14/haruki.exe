@@ -51,3 +51,6 @@ input {
 input[type="checkbox"]:checked + li {
     background-color: blue;
 }
+input[type="checkbox"] {
+    display: none;
+}
