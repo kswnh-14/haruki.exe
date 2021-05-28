@@ -56,7 +56,6 @@ input[type="checkbox"]:checked + label {
 }
 .label {
   display: block;
-  float: left;
   margin: 3px 2px;
   width: 20px;
   height: 10px;
