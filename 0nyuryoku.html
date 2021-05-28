@@ -1,0 +1,75 @@
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Debice-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="nyuryoku.css">
+    <link rel="shortcut icon" href="https://thumb.ac-illust.com/f0/f0e39fbd92a48930f87ff807378044e6_t.jpeg">
+    <title>席替えウェブアプリ</title>
+    <script src="nyuryoku.js"></script>
+</head>
+
+<body>
+    <div id="page">
+        <img src="https://media.discordapp.net/attachments/768565209723043871/837328609672298506/image0.jpg" alt="席替えをしよう！" width="600" style="display: block; margin: auto;">
+        <ol class="stepBar">
+           <li class="visited"><span><a href="index.html">0</a></span><br>説明</li>
+           <li class="visited"><span>1</span><br>入力</li>
+           <li><span>2</span><br>設定</li>
+           <li><span>3</span><br>席替え</li>
+           <li><span>4</span><br>変更</li>
+           <li><span>5</span><br>完了</li>
+        </ol>
+        <div id="form">
+            <span>選択済みの席数：<span id="selectedseats">41</span>席</span>&nbsp;
+            <span>最大：<span id="maxseats"></span>席</span><br>
+            ヨコ<select name="retsu" class="dropdownmenu" id="retsu" onchange="calcseats();" onchange="dispseats();">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6" selected>6</option>
+            </select>
+            タテ<select name=”gyo” class="dropdownmenu" id="gyo" onchange="calcseats();" onchange="dispseats();">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7" selected>7</option>
+            </select>
+            <span class="mijisso">注意：未実装</span>
+        </div>
+
+        <div id="seatArrange">
+
+        </div>
+
+        <div class="wrap"  style="text-align:center">
+            <a href="sekigae.html"><button class="button">次へ進む</button></a>
+        </div>
+    </div>
+        <footer>
+        <div class="saisyo">
+        <div class="home">
+            <a href="home.html" style="color: #807171;">
+                <p class="homeback">ホームページへ戻る</p>
+            </a>
+        </div>
+        <div class="help">
+            <div id="kiyaku">
+                <a href="https://kswnh-14.github.io/haruki.exe/kiyaku.html" style="color: #807171;">
+                    <p>利用規約</p>
+                </a>
+            </div>
+            <div id="copyright">
+                © copyright 2021 席替えをしよう All rights reserved.
+            </div>
+        </div>
+        </div>
+        </footer>
+</body>
+</html>
