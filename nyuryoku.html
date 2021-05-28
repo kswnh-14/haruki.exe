@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="nyuryoku.css">
     <link rel="shortcut icon" href="https://thumb.ac-illust.com/f0/f0e39fbd92a48930f87ff807378044e6_t.jpeg">
     <title>席替えウェブアプリ</title>
+    <script src="nyuryoku.js"></script>
 </head>
 
 <body>
@@ -21,98 +22,255 @@
            <li><span>5</span><br>完了</li>
         </ol>
         <div id="form">
-            <span id="selectedseats">選択済みの席数：<span>41</span>席</span>&nbsp;
-            <span id="maxseats">最大：<span>42</span>席</span><br>
-            ヨコ<select name="retsu" class="dropdownmenu">
+            <span>選択済みの席数：<span id="selectedseats">41</span>席</span>&nbsp;
+            <span>最大：<span id="maxseats"></span>席</span><br>
+            ヨコ<select name="retsu" class="dropdownmenu" id="retsu" onchange="calcseats();">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
+                <option value="6" selected>6</option>
             </select>
-            タテ<select name=”gyo” class="dropdownmenu">
+            タテ<select name=”gyo” class="dropdownmenu" id="gyo" onchange="calcseats();">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
                 <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-            <option value="12">12</option>
+                <option value="7" selected>7</option>
             </select>
             <span class="mijisso">注意：未実装</span>
         </div>
 
         <div id="seatArrange">
-          <table class="seatTable">
-             <tr>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-             </tr>
-             <tr>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-             </tr>
-             <tr>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-             </tr>
-             <tr>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-             </tr>
-             <tr>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-             </tr>
-             <tr>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-             </tr>
-             <tr>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-               <td class="noneseat"><span><img src="image/check_mark.png" title="check-mark" class="check_mark"></span></td>
-             </tr>
-          </table>
+          <ul>
+            <input type="checkbox" name="seatcheck" id="s11" checked onchange="calcseats();">
+            <label for="s11">
+              <li>
+              </li>
+            </label>
+            <label for="s12">
+              <input type="checkbox" name="seatcheck" id="s12" checked onchange="calcseats();">
+              <li>
+              </li>
+            </label>&nbsp;
+            <label for="s13">
+              <input type="checkbox" name="seatcheck" id="s13" checked onchange="calcseats();">
+              <li>
+              </li>
+            </label>
+            <label for="s14">
+              <input type="checkbox" name="seatcheck" id="s14" checked onchange="calcseats();">
+              <li>
+              </li>
+            </label>&nbsp;
+            <label for="s15">
+              <input type="checkbox" name="seatcheck" id="s15" checked onchange="calcseats();">
+              <li>
+              </li>
+            </label>
+            <label for="s16">
+              <input type="checkbox" name="seatcheck" id="s16" checked onchange="calcseats();">
+              <li>
+              </li>
+            </label>
+          </ul>
+          <ul>
+            <label for="s21">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s21" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s22">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s22" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s23">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s23" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s24">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s24" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s25">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s25" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s26">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s26" checked onchange="calcseats();">
+              </li>
+            </label>
+          </ul>
+          <ul>
+            <label for="s31">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s31" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s32">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s32" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s33">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s33" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s34">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s34" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s35">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s35" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s36">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s36" checked onchange="calcseats();">
+              </li>
+            </label>
+          </ul>
+          <ul>
+            <label for="s41">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s41" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s42">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s42" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s43">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s43" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s44">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s44" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s45">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s45" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s46">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s46" checked onchange="calcseats();">
+              </li>
+            </label>
+          </ul>
+          <ul>
+            <label for="s51">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s51" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s52">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s52" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s53">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s53" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s54">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s54" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s55">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s55" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s56">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s56" checked onchange="calcseats();">
+              </li>
+            </label>
+          </ul>
+          <ul>
+            <label for="s61">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s61" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s62">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s62" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s63">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s63" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s64">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s64" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s65">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s65" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s66">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s66" checked onchange="calcseats();">
+              </li>
+            </label>
+          </ul>
+          <ul>
+            <label for="s71">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s71" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s72">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s72" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s73">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s73" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s74">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s74" checked onchange="calcseats();">
+              </li>
+            </label>&nbsp;
+            <label for="s75">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s75" checked onchange="calcseats();">
+              </li>
+            </label>
+            <label for="s76">
+              <li>
+                <input type="checkbox" name="seatcheck" id="s76" checked  onchange="calcseats();">
+              </li>
+            </label>
+          </ul>
+
+        </div>
 
         <div class="wrap"  style="text-align:center">
             <a href="sekigae.html"><button class="button">次へ進む</button></a>
