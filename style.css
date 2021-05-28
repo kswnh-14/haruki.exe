@@ -23,6 +23,9 @@
    a {
      text-decoration: none;
    }
+   p {
+      margin: 10px;
+   }
 /***ステップバー***/
    .stepBar {
      display: flex;
@@ -214,4 +217,7 @@
    background: #3b3b3b;
    transition: all .3s;
    border-radius: 50%;
+   }
+   .homeback {
+      margin-top: 20px 0px 15px;
    }
