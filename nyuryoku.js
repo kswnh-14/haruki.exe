@@ -24,6 +24,7 @@ function calcseats() {
 
 //席の生成
 function dispseats() {
+  var i = 1;
   const seatsretsu = document.getElementById("retsu").selectedIndex +1;
   const seatsgyo = document.getElementById("gyo").selectedIndex +1;
   const maxseats = seatsgyo * seatsretsu;
@@ -39,16 +40,17 @@ function dispseats() {
     var ul = document.createElement("ul");
 
     for(let m=1; m<=seatsretsu; m++) {
+      i++;
       var li = document.createElement("li");
         li.setAttribute("class","seatdata");
       var input = document.createElement("input");
         input.setAttribute("type","checkbox");
         input.setAttribute("name","seatcheck");
         input.setAttribute("onchange","calcseats();");
-        input.setAttribute("id","r"+n+"g"+m);
+        input.setAttribute("id","s"+i);
         input.checked = true;
       var label = document.createElement("label");
-        label.setAttribute("for","r"+n+"g"+m);
+        label.setAttribute("for","s"+i);
       li.appendChild(input);
       li.appendChild(label);
       ul.appendChild(li);
