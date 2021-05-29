@@ -24,9 +24,9 @@ function calcseats() {
 
 //席の生成
 function dispseats() {
-  const maxseats = seatsgyo * seatsretsu;
   const seatsretsu = document.getElementById("retsu").selectedIndex +1;
   const seatsgyo = document.getElementById("gyo").selectedIndex +1;
+  const maxseats = seatsgyo * seatsretsu;
 
   var table = document.getElementById("seatArrange");
   table.innerHTML = "";
