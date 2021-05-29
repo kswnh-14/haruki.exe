@@ -223,3 +223,8 @@
    .homeback {
       margin-top: 20px 0px 15px;
    }
+   .wrap {
+     text-align: center;
+     height: 80px;
+     margin-top: 20px;
+   }
