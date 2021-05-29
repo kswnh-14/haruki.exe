@@ -142,11 +142,6 @@
     display: none;
    }
 /*席替えを始める！*/
-   .wrap {
-     text-align: center;
-     height: 100px;
-     margin-top: 20px;
-   }
    .button {
      width: 250px;
      height: 60px;
