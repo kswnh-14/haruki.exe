@@ -57,12 +57,12 @@ select {
     border-bottom: 2px solid #f7f7f7;
 }
 #seatArrange .row ul {
+    display: flex;
     flex-wrap: nowrap;
     min-height: 40px;
 }
 #seatArrange input:checked + label {
     background-color: #bc7aca;
-
 }
 #seatArrange .row li label {
     display: block;
