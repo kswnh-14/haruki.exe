@@ -1,8 +1,7 @@
 window.onload = function (){
 
 calcseats();
-
-
+  
 };
 
 function calcseats() {
@@ -12,9 +11,9 @@ function calcseats() {
   const seatcheck = document.getElementsByName("seatcheck");
   let selectedseats = 0;
   for (let i=0; i<maxseats; i++){
-        if (seatcheck[i].checked){
-          selectedseats++;
-      }
+    if (seatcheck[i].checked){
+      selectedseats++;
+    }
   }
 
   document.getElementById("selectedseats").innerHTML = selectedseats;
