@@ -81,7 +81,6 @@ li {
     list-style: none;
 }
 #seatArrange {
-    float: right;
     max-width: calc(100% - 24px);
     width: 100%;
 }
