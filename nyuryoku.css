@@ -92,3 +92,47 @@ ul {
 input[type="checkbox"] {
     display: none;
 }
+/*seatArrange*/
+#seatArrange {
+  margin: 15px auto;
+}
+ul {
+  margin: 30px auto;
+  padding: auto 40px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+#seatArrange li {
+  background-color: #000000;
+  padding: 15px 40px;
+  display: inline;
+  border: solid 2px;
+  border-color: #99caff;
+  cursor: pointer;
+  cursor: hand;
+}
+input {
+  width: 20px;
+  height: 10px;
+  position: relative;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + label {
+  background-color: #4169e1;
+}
+input[type="checkbox"]:checked + li {
+  background-color: #ff7f50;
+}
+.label {
+  margin: 3px 2px;
+  width: 20px;
+  height: 10px;
+  cursor:pointer;
+  border:1px;
+}
+div {
+ text-align: center;
+}
