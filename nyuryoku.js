@@ -17,5 +17,5 @@ function calcseats() {
   }
 
   document.getElementById("selectedseats").innerHTML = selectedseats;
-  document.getElementById("maxseats").innerHTML = maxseats;
+  //document.getElementById("maxseats").innerHTML = maxseats;
 };
