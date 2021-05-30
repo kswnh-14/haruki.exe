@@ -91,6 +91,8 @@ li {
 }
 ul {
     list-style: none;
+  
+ text-align:center;
 }
 input[type="checkbox"] {
     display: none;
