@@ -79,20 +79,14 @@ li {
     vertical-align: baseline;
     background: transparent;
     list-style: none;
-  
- text-align:center;
 }
 #seatArrange {
     padding: 10px;
     max-width: calc(100% - 24px);
     width: 100%;
-  
- text-align:center;
 }
 ul {
     list-style: none;
-  
- text-align:center;
 }
 input[type="checkbox"] {
     display: none;
