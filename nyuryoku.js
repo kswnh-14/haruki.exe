@@ -19,7 +19,6 @@ function calcseats() {
     }
   }
   document.getElementById("selectedseats").innerHTML = selectedseats;
-  document.getElementById("maxseats").innerHTML = maxseats;
 };
 
 
@@ -29,6 +28,7 @@ function dispseats() {
   const seatsretsu = document.getElementById("retsu").selectedIndex +1;
   const seatsgyo = document.getElementById("gyo").selectedIndex +1;
   const maxseats = seatsgyo * seatsretsu;
+  document.getElementById("maxseats").innerHTML = maxseats;
 
   var table = document.getElementById("seatArrange");
   table.innerHTML = "";
