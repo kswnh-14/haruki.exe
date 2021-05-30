@@ -51,39 +51,7 @@
   }
 }
         
- body {
-            background-color: white;
-            transition: all 1s;
-        }
-        
-        .bodyfadeout {
-            opacity: 0;
-        }
-        
-        
-        
-        #a {
-            width: 0;
-            height: 100vh;
-            background-color: coral;
-            border: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 999;
-        }
-        
-        .anime5 {
-            animation: animemove5 1.5s linear forwards;
-        }
-        
-        @keyframes animemove5 {
-            0% {}
-            100% {
-                width: 100vw;
-            }
-        }
-
+ 
 </style>
     
     <meta charset="utf-8">
@@ -172,24 +140,7 @@
         </div>
         </div>
         </footer>
-    <script>
-    const body = document.getElementsByTagName('body')[0];
-
-        function fadeOut() {
-            body.classList.add('bodyfadeout');
-        }
-
-        function google2() {
-            location.href = 'nyuryoku.html'
-        }
-        var bt5 = document.getElementById('button5');
-        var a = document.getElementById('a');
-        bt5.addEventListener('click', function() {
-            a.classList.add('anime5');
-            setTimeout(fadeOut, 1500);
-            setTimeout(google2, 2500);
-        });
-    </script>
+   
 </body>
 <script type="text/javascript" src="sekigae.js">
   
