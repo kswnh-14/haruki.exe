@@ -91,3 +91,6 @@ ul {
 input[type="checkbox"] {
     display: none;
 }
+table{
+ text-align:center; 
+}
