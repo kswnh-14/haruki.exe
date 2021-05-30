@@ -281,24 +281,4 @@
   transform: scale(0.8);
   }
 }
-#a {
-            width: 0;
-            height: 200vh;
-            background-color: #cce5ff;
-            border: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 999;
-        }
-        
-        .anime5 {
-            animation: animemove5 1.5s linear forwards;
-        }
-        
-        @keyframes animemove5 {
-            0% {}
-            100% {
-                width: 100vw;
-            }
-        }
+
