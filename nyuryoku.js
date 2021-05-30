@@ -29,6 +29,7 @@ function dispseats() {
   const seatsgyo = document.getElementById("gyo").selectedIndex +1;
   const maxseats = seatsgyo * seatsretsu;
   document.getElementById("maxseats").innerHTML = maxseats;
+  document.getElementById("selectedseats").innerHTML = maxseats;
 
   var table = document.getElementById("seatArrange");
   table.innerHTML = "";
