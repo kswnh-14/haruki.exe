@@ -116,7 +116,7 @@
         </div>
         <div class="wrap" text-align: center;>
             <a href="nyuryoku.html">
-                <button class="button">次のページに進む</button></a>
+                <button class="button" id="button5">次のページに進む</button></a>
         </div>
     </div>
         <footer>
@@ -140,7 +140,22 @@
         </footer>
 </body>
 <script type="text/javascript" src="sekigae.js">
-  
+  const body = document.getElementsByTagName('body')[0];
+
+        function fadeOut() {
+            body.classList.add('bodyfadeout');
+        }
+
+        function google2() {
+            location.href = 'kirikae3.html'
+        }
+        var bt5 = document.getElementById('button5');
+        var a = document.getElementById('a');
+        bt5.addEventListener('click', function() {
+            a.classList.add('anime5');
+            setTimeout(fadeOut, 1500);
+            setTimeout(google2, 2500);
+        });
 </script>
 
 </html>
