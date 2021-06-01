@@ -1,3 +1,10 @@
+window.onload = function (){
+
+dispseats();
+calcseats();
+
+};
+
 //席数の計算
 function calcseats() {
   const seatsretsu = document.getElementById("retsu").selectedIndex +1;
