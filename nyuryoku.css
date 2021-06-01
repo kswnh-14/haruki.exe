@@ -95,3 +95,435 @@ ul {
 input[type="checkbox"] {
     display: none;
 }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.modal.is-active {
+    display: flex;
+}
+.modal {
+    align-items: center;
+    display: none;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 40;
+}
+.modal, .modal-background {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+body{
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+.modal-background {
+    background-color: rgba(10,10,10,.86);
+}
+#app .modal-card {
+    display: block;
+    width: auto;
+    min-width: 640px;
+    margin: 0;
+}
+.modal-card {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 40px);
+    overflow: hidden;
+}
+.modal-card, .modal-content {
+    margin: 0 20px;
+    max-height: calc(100vh - 160px);
+    overflow: auto;
+    position: relative;
+    width: 100%;
+}
+.modal-card-head {
+    width: 550px;
+    align-self: center;
+    border-bottom: 1px solid #dbdbdb;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.modal-card-foot, .modal-card-head {
+    align-items: center;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    padding: 20px;
+    position: relative;
+}
+.modal-card-title {
+    color: #363636;
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.modal-card-body {
+    width: 550px;
+    align-self: center;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+    background-color: #fff;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: auto;
+    padding: 20px;
+
+}
+section {
+    display: block;
+}
+section {
+    display: block;
+}
+#memberBulkInput {
+    width: 100%;
+    height: 100%;
+}
+.textarea:not([rows]) {
+    max-height: 600px;
+    min-height: 120px;
+}
+.textarea {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    padding: .625em;
+    resize: vertical;
+}
+.input, .textarea {
+    background-color: #fff;
+    border-color: #dbdbdb;
+    color: #363636;
+    box-shadow: inset 0 1px 2px rgb(10 10 10 / 10%);
+    max-width: 100%;
+    width: 100%;
+}
+button, input, select, textarea close {
+    margin: 0;
+}
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    width: 60%;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding: 2px 0px 0px 2px;
+}
+#memberBulkInput .textarea {
+    min-width: 240px;
+    height: 300px;
+}
+#app .modal-card-foot {
+    padding: 15px;
+}
+#app .modal-card-foot {
+    justify-content: flex-end;
+}
+.modal-card-foot {
+    width: 550px;
+    align-self: center;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: 1px solid #dbdbdb;
+}
+#app .button #close{
+    display: inline-block;
+}
+#app * {
+    box-shadow: none;
+}
+.modal-card-foot .button:not(:last-child) {
+    margin-right: 10px;
+}
+.button #close{
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(.375em - 1px);
+    padding-left: .75em;
+    padding-right: .75em;
+    padding-top: calc(.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+}
+button,close{
+    appearance: auto;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.button is-colored complete {
+    color: #f56565;
+    border: none;
+    font-weight: bold;
+}
+.button, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea, #close {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.25em;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(.375em - 1px);
+    padding-left: calc(.625em - 1px);
+    padding-right: calc(.625em - 1px);
+    padding-top: calc(.375em - 1px);
+    position: relative;
+    vertical-align: top;
+}
+#app .modal-card-foot {
+    justify-content: flex-end;
+}
+#app .modal-card {
+		    display: block;
+		    width: auto;
+		    min-width: 640px;
+		    margin: 0;
+}
+		
+#app .modal-card-foot {
+		    justify-content: flex-end;
+}
+
+#app .modal-card-foot {
+		    padding: 15px;
+}
+#menuExeError .modal-card-body p:first-child {
+		    padding-bottom: 20px;
+}
+		
+#menuExeError .modal-card-body span {
+		    color: #f56565;
+		    font-weight: bold;
+}
+#memberAllDelete .modal-card-body {
+		    padding-bottom: 40px;
+}
+/* ----------------------
+		    Small
+		---------------------- */
+		
+		@media (max-width: 542px) {
+		
+		    #app {
+		        margin-bottom: 61px;
+		    }
+		
+		    #app .modal-card {
+		        width: 90%;
+		        min-width: 0;
+		    }
+		
+		    #app .modal-card-head {
+		        padding: 15px;
+		    }
+		
+		    #app .modal-card-foot {
+		        padding: 10px;
+		    }
+		
+		    #app .modal-card-title {
+		        font-size: 20px;
+		    }
+		
+		    header {
+		        margin-bottom: 15px;
+		        padding: 15px 0;
+		    }
+		
+		    header .title.is-3 {
+		        display: block;
+		        font-size: 20px;
+		        text-align: center;
+		    }
+		
+		    #content {
+		        position: relative;
+		        z-index: 0;
+		    }
+		
+		    #menuTab {
+		        width: 100%;
+		        margin-bottom: 20px;
+		    }
+		
+		    #menuTab.tabs ul {
+		        justify-content: center;
+		    }
+		
+		    #menuExe {
+		        position: fixed;
+		        left: 0;
+		        bottom: 0;
+		        width: 100%;
+		        margin-bottom: 0;
+		        background: #eee;
+		        border-top: 1px solid #929292;
+		        z-index: 10;
+		    }
+		
+		    #menuExe .button #close{
+		        display: block;
+		        width: 90%;
+		        margin: 10px auto;
+		    }
+		
+		    #seatProps {
+		        margin-bottom: 35px;
+		    }
+		
+		    #seatProps > div {
+		        float: none;
+		    }
+		
+		    #seatProps .seatInfo {
+		        overflow: hidden;
+		        margin-bottom: 15px;
+		    }
+		
+		    #memberHeader {
+		        margin-bottom: 35px;
+		    }
+		
+		    #memberHeader > div {
+		        float: none;
+		    }
+		
+		    #memberHeader .memberNum {
+		        margin-bottom: 15px;
+		    }
+		
+		    #effectList {
+		        margin-top: 10px;
+		    }
+		
+		    #effectList > ul > li {
+		        width: 100%;
+		        margin-bottom: 20px;
+		    }
+		
+		    #effectCountMain span {
+		        font-size: 60px;
+		        top: calc(50% - 55px);
+		    }
+		
+		    #effectCountSub span {
+		        width: 20px;
+		        height: 20px;
+		        font-size: 14px;
+		        line-height: 20px;
+		    }
+		
+		    footer {
+		        margin-top: 40px;
+		        padding: 20px 0;
+		    }
+}
+#memberBulkInput .textarea {
+    min-width: 240px;
+    height: 300px;
+}
+.textarea:not([rows]) {
+    max-height: 600px;
+    min-height: 120px;
+}
+.textarea {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    padding: .625em;
+    resize: vertical;
+}
+.input, .textarea {
+    background-color: #fff;
+    border-color: #dbdbdb;
+    color: #363636;
+    box-shadow: inset 0 1px 2px rgb(10 10 10 / 10%);
+    max-width: 100%;
+    width: 100%;
+}
