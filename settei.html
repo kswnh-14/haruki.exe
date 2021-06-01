@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="https://thumb.ac-illust.com/f0/f0e39fbd92a48930f87ff807378044e6_t.jpeg">
     <title>席替えウェブアプリ</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
     <div id="page">
@@ -18,6 +19,47 @@
            <li><span>4</span><br>変更</li>
            <li><span>5</span><br>完了</li>
         </ol>
+        <div class="editor">
+		<input type="button" value="一括入力" class="button">
+      <input type="button" value="全削除" class="button is-gray">
+    </div>
+    <div id="memberBulkInput" class="modal" :class="{ 'is-active': memberBulkInputFlag }">
+      <div class="modal-background">
+      </div>
+      <div class="modal-card">
+        <div class="modal-card-head">
+          <p class="modal-card-title">メンバー 一括入力</p>
+        </div>
+        <section class="modal-card-body">
+          <textarea placeholder="1人ずつ改行をしてください。例：&#13;佐藤&#13中村&#13エリザベス&#13１&#13２&#13３" class="textarea"></textarea>
+        </section>
+        <div class="modal-card-foot">
+          <button id="close">キャンセル</button>
+          <button class="button is-colored complete">完了</button>
+        </div>
+      </div>
+    </div>
+   </div>
+    <div class="wrap"  style="text-align:center"><a href="settei.html"><button class="button">次へ進む</button></a></div>
+
+        <footer>
+        <div class="saisyo">
+        <div class="home">
+            <a href="home.html" style="color: #807171;">
+                <p class="homeback">ホームページへ戻る</p>
+            </a>
+        </div>
+        <div class="help">
+            <div id="kiyaku">
+                <a href="https://kswnh-14.github.io/haruki.exe/kiyaku.html" style="color: #807171;">
+                    <p style="margin-top: 0;">利用規約</p>
+                </a>
+            </div>
+            <div id="copyright">
+                © copyright 2021 席替えをしよう All rights reserved.
+            </div>
+        </footer>
+            
         <div class="wrap" text-align: center;>
             <a href="sekigae.html">
                 <button class="button">次へ進む</button></a>
