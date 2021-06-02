@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".button").on("click", function() {
+    $(".button1").on("click", function() {
       $("div.modal").addClass("is-active");
     })
 
