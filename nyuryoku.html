@@ -1,5 +1,28 @@
 <html lang="ja">
 <head>
+  <style>
+      #a {
+            width: 0;
+            height: 200vh;
+            background-color: #cce5ff;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+        
+        .anime5 {
+            animation: animemove5 2.0s linear forwards;
+        }
+        
+        @keyframes animemove5 {
+            0% {}
+            100% {
+                width: 100vw;
+            }
+        }   
+   </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=Debice-width, initial-scale=1">
@@ -56,9 +79,10 @@
 
     </div>
   </div>
-    <div class="wrap"  style="text-align:center">
-	    <a href="settei.html">
-	    	<button class="button">次へ進む</button></a></div>
+    <div id="a"></div>
+        <div class="wrap" text-align: center;>
+                <button class="button" id="button5">次のページに進む</button>
+        </div>
     <footer>
         <div class="saisyo">
         <div class="home">
@@ -78,5 +102,23 @@
         </div>
         </div>
       </footer>
+      <script>
+  	const body = document.getElementsByTagName('body')[0];
+
+        function fadeOut() {
+            body.classList.add('bodyfadeout');
+        }
+
+        function google2() {
+            location.href = 'nyuryoku.html'
+        }
+        var bt5 = document.getElementById('button5');
+        var a = document.getElementById('a');
+        bt5.addEventListener('click', function() {
+            a.classList.add('anime5');
+            setTimeout(fadeOut, 1500);
+            setTimeout(google2, 2500);
+        });
+	</script>
 </body>
 </html>
