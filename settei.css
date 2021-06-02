@@ -88,7 +88,7 @@ body{
     font-size: 1.5rem;
     line-height: 1;
 }
-p {
+.p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -136,7 +136,7 @@ section {
     max-width: 100%;
     width: 100%;
 }
-button, input, select, textarea close {
+button1, input, select, textarea close {
     margin: 0;
 }
 blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
@@ -189,16 +189,16 @@ textarea {
     border-bottom-right-radius: 6px;
     border-top: 1px solid #dbdbdb;
 }
-#app .button #close{
+#app .button1 #close{
     display: inline-block;
 }
 #app * {
     box-shadow: none;
 }
-.modal-card-foot .button:not(:last-child) {
+.modal-card-foot .button1:not(:last-child) {
     margin-right: 10px;
 }
-.button #close{
+.button1 #close{
     background-color: #fff;
     border-color: #dbdbdb;
     border-width: 1px;
@@ -212,7 +212,7 @@ textarea {
     text-align: center;
     white-space: nowrap;
 }
-button,close{
+.button1, .close{
     appearance: auto;
     text-rendering: auto;
     color: -internal-light-dark(black, white);
@@ -235,12 +235,12 @@ button,close{
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
 }
-.button is-colored complete {
+.button1 is-colored complete {
     color: #f56565;
     border: none;
     font-weight: bold;
 }
-.button, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea, #close {
+.button1, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea, #close {
     -moz-appearance: none;
     -webkit-appearance: none;
     align-items: center;
